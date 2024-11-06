@@ -191,7 +191,7 @@ header a {
 }
 #aboutSection hr {
   border: none; /* Remove default border */
-  height: 1px; /* Set the height of the line */
+  height: 0.5px; /* Set the height of the line */
   background-color: #d2d2d7; /* Set the background color */
   margin: 18px 0; /* Optional: Adjust margins as needed */
   margin: 18px 14% 0 0;
