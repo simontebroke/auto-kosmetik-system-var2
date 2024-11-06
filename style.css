@@ -48,16 +48,15 @@ header a {
 }
 #home .heading {
   position: absolute;
-  top: 24%;
-  right: 19%;
+  top: 30%;
+  left: 15%;
   color: white;
 }
 #home .heading h3 {
   font-size: 2.2rem;
   font-weight: 600;
-  text-align: center;
+  text-align: left;
   line-height: 1.2;
-  top: 4h;
   letter-spacing: 0.2px;
 }
 #home .heading h6 {
@@ -67,17 +66,16 @@ header a {
   margin-top: 19px;
   color: #fff;
 }
-#home .pp {
-  grid-area: text;
-}
-#home .buttons-container {
-  grid-area: buttons;
-}
 #home .content {
   position: absolute;
-  bottom: 5%;
-  left: 12%;
+  bottom: 22px;
+  left: 14%;
   color: white;
+  display: flex;
+  flex-direction: column;
+}
+#home .content .buttons-container {
+  grid-area: buttons;
   display: flex;
   flex-direction: column;
 }
@@ -85,25 +83,36 @@ header a {
   font-size: 23px;
   font-weight: 600;
   line-height: 29px;
-  text-align: left;
+  text-align: center;
   margin-bottom: 9px;
 }
 #home .content .content-grid {
   display: grid;
-  grid-template-areas: "text" "buttons";
+  grid-template-columns: 278px 1fr;
+  gap: 23px;
+}
+#home .content .content-grid span {
+  color: #8d8d8d;
+}
+#home .content .content-grid h5 {
+  color: rgba(255, 255, 255, 0.6784313725);
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 13.13px;
+  text-align: left;
 }
 #home .content h2 {
   font-size: 33px;
   font-weight: 700;
   line-height: 40px;
-  text-align: left;
+  text-align: center;
 }
 #home .content h4 {
   font-size: 13px;
   font-weight: 500;
   line-height: 15.51px;
   letter-spacing: 0.04em;
-  text-align: left;
+  text-align: center;
   color: #8d8d8d;
   margin: 12px 0;
 }
@@ -118,23 +127,31 @@ header a {
   letter-spacing: 0.04em;
   text-align: left;
   color: #d9d9d9;
+  grid-area: text;
+  position: relative;
+  bottom: 22px;
 }
 #home .content .pp-container {
-  max-width: 40vh;
+  max-width: 910px;
+}
+#home .content .scocon {
+  align-self: end;
 }
 #home .buttons-container {
   margin-top: 9px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin-bottom: 15px;
   grid-template-areas: "reservieren  speisekarte";
-  gap: 12px;
+  gap: 10px;
   position: relative;
 }
 #home .buttons-container button {
   display: inline-block;
   border-radius: 5px;
-  padding: 10px 55px;
+  padding: 15px 0px;
+}
+#home .buttons-container button p {
+  font-weight: 450;
 }
 #home .buttons-container .btn1 {
   background-color: #f5f5f5;
@@ -170,14 +187,14 @@ header a {
 }
 
 #aboutSection {
-  margin: 32px 0 0 12%;
+  margin: 32px 0 0 14%;
 }
 #aboutSection hr {
   border: none; /* Remove default border */
   height: 1px; /* Set the height of the line */
   background-color: #d2d2d7; /* Set the background color */
   margin: 18px 0; /* Optional: Adjust margins as needed */
-  margin: 18px 12% 0 0;
+  margin: 18px 14% 0 0;
 }
 #aboutSection h5 {
   color: #252525;
@@ -192,7 +209,6 @@ header a {
   flex-direction: row;
   gap: 20px;
   flex-shrink: 0;
-  overflow: scroll;
 }
 #aboutSection .buttonContainer .aboutButton {
   width: 304px;

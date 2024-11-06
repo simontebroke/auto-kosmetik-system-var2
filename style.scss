@@ -55,15 +55,14 @@ header {
   height: 75vh;
   .heading {
     position: absolute;
-    top: 24%;
-    right: 19%;
+    top: 30%;
+    left: 15%;
     color: white;
     h3 {
       font-size: 2.2rem;
       font-weight: 600;
-      text-align: center;
+      text-align: left;
       line-height: 1.2;
-      top: 4h;
       letter-spacing: 0.2px;
     }
     h6 {
@@ -74,45 +73,53 @@ header {
       color: #fff;
     }
   }
-  .pp {
-    grid-area: text;
-  }
 
-  .buttons-container {
-    grid-area: buttons;
-  }
   .content {
+    .buttons-container {
+      grid-area: buttons;
+      display: flex;
+      flex-direction: column;
+    }
     h6 {
       font-size: 23px;
       font-weight: 600;
       line-height: 29px;
-      text-align: left;
+      text-align: center;
       margin-bottom: 9px;
     }
     position: absolute;
-    bottom: 5%;
-    left: 12%;
+    bottom: 22px;
+    left: 14%;
     color: white;
     display: flex;
     flex-direction: column;
     .content-grid {
       display: grid;
-      grid-template-areas:
-        "text"
-        "buttons";
+      grid-template-columns: 278px 1fr;
+      gap: 23px;
+      span {
+        color: #8d8d8d;
+      }
+      h5 {
+        color: #ffffffad;
+        font-size: 11px;
+        font-weight: 500;
+        line-height: 13.13px;
+        text-align: left;
+      }
     }
     h2 {
       font-size: 33px;
       font-weight: 700;
       line-height: 40px;
-      text-align: left;
+      text-align: center;
     }
     h4 {
       font-size: 13px;
       font-weight: 500;
       line-height: 15.51px;
       letter-spacing: 0.04em;
-      text-align: left;
+      text-align: center;
       color: #8d8d8d;
       margin: 12px 0;
     }
@@ -127,23 +134,31 @@ header {
       letter-spacing: 0.04em;
       text-align: left;
       color: #d9d9d9;
+      grid-area: text;
+      position: relative;
+      bottom: 22px;
     }
     .pp-container {
-      max-width: 40vh;
+      max-width: 910px;
+    }
+    .scocon {
+      align-self: end;
     }
   }
   .buttons-container {
     margin-top: 9px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-bottom: 15px;
     grid-template-areas: "reservieren  speisekarte";
-    gap: 12px;
+    gap: 10px;
     position: relative;
     button {
       display: inline-block;
       border-radius: 5px;
-      padding: 10px 55px;
+      padding: 15px 0px;
+      p {
+        font-weight: 450;
+      }
     }
     .btn1 {
       background-color: #f5f5f5;
@@ -181,14 +196,14 @@ header {
 }
 
 #aboutSection {
-  margin: 32px 0 0 12%;
+  margin: 32px 0 0 14%;
 
   hr {
     border: none; /* Remove default border */
     height: 1px; /* Set the height of the line */
     background-color: #d2d2d7; /* Set the background color */
     margin: 18px 0; /* Optional: Adjust margins as needed */
-    margin: 18px 12% 0 0;
+    margin: 18px 14% 0 0;
   }
 
   h5 {
@@ -204,7 +219,6 @@ header {
     flex-direction: row;
     gap: 20px;
     flex-shrink: 0;
-    overflow: scroll;
     .aboutButton {
       width: 304px;
       height: 145px;
