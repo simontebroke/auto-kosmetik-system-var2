@@ -55,11 +55,11 @@ header {
   height: 75vh;
   .heading {
     position: absolute;
-    top: 30%;
-    left: 14%;
+    top: 32%;
+    left: 15%;
     color: white;
     h3 {
-      font-size: 2.2rem;
+      font-size: 44px;
       font-weight: 600;
       text-align: left;
       line-height: 1.2;
@@ -89,7 +89,7 @@ header {
     }
     position: absolute;
     bottom: 40px;
-    left: 14%;
+    left: 15%;
     color: white;
     display: flex;
     flex-direction: column;
@@ -195,7 +195,7 @@ header {
 }
 
 .aboutSectionTitle {
-  margin-left: 14%;
+  margin-left: 15%;
   color: #252525;
   font-size: 1rem;
   font-weight: 700;
@@ -206,7 +206,7 @@ header {
 }
 
 #aboutSection {
-  margin: 0px 11.7% 0;
+  margin: 0px 12.7% 0;
 
   h5 {
     color: #252525;
@@ -293,7 +293,7 @@ header {
 #footer {
   background-color: #f0f0f3 !important;
   .footerCc {
-    margin: 0 14%;
+    margin: 0 15%;
     hr {
       border: none;
       height: 0.5px;

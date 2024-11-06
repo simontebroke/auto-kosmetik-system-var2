@@ -155,11 +155,12 @@ function App() {
                 </p>
               </div>
               <div className="aboutBox">
-                <h5>Smart Repair</h5>
+                <h5>Keramikversiegelung</h5>
                 <h6>Service</h6>
                 <p>
-                  Kleine Dellen, Beulen oder Kratzer entfernen wir mühelos, um
-                  die makellose Optik Ihres Fahrzeugs wiederherzustellen.
+                  Die Keramikversiegelung schützt Ihr Fahrzeug langfristig vor
+                  Wasserflecken, Kratzern und anderen Verschmutzungen und
+                  verleiht ihm eine robuste, glatte O...
                 </p>
               </div>
             </div>
