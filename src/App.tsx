@@ -243,7 +243,7 @@ function App() {
                     <br />
                     <a href="tel:+4928711877963">tel. 02871 18 77 963</a>
                     <br />
-                    <a href="mailto:info@alprosecco.de">im-durmaz@hotmail.de</a>
+                    <a href="mailto:info@alprosecco.de">m-durmaz@hotmail.de</a>
                     <br />
                     <a href="https://www.alprosecco.de" target="_blank">
                       www.autopflege-bocholt.de
