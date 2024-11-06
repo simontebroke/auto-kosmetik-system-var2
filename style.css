@@ -88,7 +88,7 @@ header a {
 }
 #home .content .content-grid {
   display: grid;
-  grid-template-columns: 278px 1fr;
+  grid-template-columns: 288px 1fr;
   gap: 23px;
 }
 #home .content .content-grid span {
@@ -109,9 +109,9 @@ header a {
 }
 #home .content h4 {
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 15.51px;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.01em;
   text-align: center;
   color: #8d8d8d;
   margin: 12px 0;
