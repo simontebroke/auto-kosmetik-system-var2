@@ -102,7 +102,7 @@ function App() {
                     <p className="pp">
                       Wellness für dein Fahrzeug. Unser erfahrenes Team steht
                       Ihnen für jede unserer Dienstleistungen als zuverlässiger
-                      Partner zur Seite und behande...
+                      Partner zur Seite und be...
                     </p>
                   ) : (
                     <p className="pp">
