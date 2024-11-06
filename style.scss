@@ -130,13 +130,12 @@ header {
     .pp {
       font-size: 15px;
       font-weight: 300;
-      line-height: 17.9px;
-      letter-spacing: 0.04em;
+      line-height: 21px;
       text-align: left;
       color: #d9d9d9;
       grid-area: text;
       position: relative;
-      bottom: 22px;
+      bottom: 33px;
     }
     .pp-container {
       max-width: 910px;
@@ -175,7 +174,7 @@ header {
         background-color: #f0f0f0f1;
       }
     }
-    .reserve {
+    .menu {
       background-color: #007af5;
       border: 1px solid #007af5;
       p {
@@ -188,7 +187,6 @@ header {
     p {
       font-size: 14px;
       font-weight: 600;
-      letter-spacing: 0.04em;
       text-align: center;
       color: #222222;
     }
@@ -239,7 +237,7 @@ header {
         padding: 0 0 0 3px;
         color: #7f7f7f;
         font-size: 13px;
-        font-weight: 400;
+        font-weight: 300;
         letter-spacing: 0.01em;
         text-align: left;
         margin-top: 9px;
@@ -484,5 +482,11 @@ header {
 @media (max-width: 1859px) {
   #photoSection .photoSectionContainer {
     overflow-x: scroll;
+  }
+}
+
+@media (max-width: 1412px) {
+  #home .content .content-grid .scocon .pp-container .pp {
+    bottom: 12px;
   }
 }

@@ -123,13 +123,12 @@ header a {
 #home .content .pp {
   font-size: 15px;
   font-weight: 300;
-  line-height: 17.9px;
-  letter-spacing: 0.04em;
+  line-height: 21px;
   text-align: left;
   color: #d9d9d9;
   grid-area: text;
   position: relative;
-  bottom: 22px;
+  bottom: 33px;
 }
 #home .content .pp-container {
   max-width: 910px;
@@ -168,20 +167,19 @@ header a {
 #home .buttons-container .btn1:hover {
   background-color: rgba(240, 240, 240, 0.9450980392);
 }
-#home .buttons-container .reserve {
+#home .buttons-container .menu {
   background-color: #007af5;
   border: 1px solid #007af5;
 }
-#home .buttons-container .reserve p {
+#home .buttons-container .menu p {
   color: #fff;
 }
-#home .buttons-container .reserve:hover {
+#home .buttons-container .menu:hover {
   background-color: #0074e8;
 }
 #home .buttons-container p {
   font-size: 14px;
   font-weight: 600;
-  letter-spacing: 0.04em;
   text-align: center;
   color: #222222;
 }
@@ -231,7 +229,7 @@ header a {
   padding: 0 0 0 3px;
   color: #7f7f7f;
   font-size: 13px;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0.01em;
   text-align: left;
   margin-top: 9px;
@@ -444,6 +442,11 @@ header a {
 @media (max-width: 1859px) {
   #photoSection .photoSectionContainer {
     overflow-x: scroll;
+  }
+}
+@media (max-width: 1412px) {
+  #home .content .content-grid .scocon .pp-container .pp {
+    bottom: 12px;
   }
 }
 
