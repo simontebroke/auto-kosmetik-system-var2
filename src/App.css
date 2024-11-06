@@ -456,6 +456,9 @@ header a {
   #aboutSection .aboutScrollSection .boxContainer {
     margin: 0;
   }
+  #aboutSection .aboutScrollSection .boxContainer .withMargin {
+    margin: 0 40px 0 0;
+  }
   #aboutSection {
     margin: 0px 0 0 14%;
   }

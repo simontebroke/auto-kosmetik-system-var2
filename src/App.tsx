@@ -102,7 +102,7 @@ function App() {
                     <p className="pp">
                       Wellness für dein Fahrzeug. Unser erfahrenes Team steht
                       Ihnen für jede unserer Dienstleistungen als zuverlässiger
-                      Partner zur Seite und be...
+                      Part...
                     </p>
                   ) : (
                     <p className="pp">
@@ -181,7 +181,7 @@ function App() {
                   die makellose Optik Ihres Fahrzeugs wiederherzustellen.
                 </p>
               </div>
-              <div className="aboutBox">
+              <div className="aboutBox withMargin">
                 <h5>Keramikversiegelung</h5>
                 <h6>Service</h6>
                 <p>
