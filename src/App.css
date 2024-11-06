@@ -282,7 +282,7 @@ header a {
   background-color: #f0f0f3 !important;
 }
 #footer .footerCc {
-  margin: 0 15%;
+  margin: 50px 15%;
 }
 #footer .footerCc hr {
   border: none;
@@ -293,7 +293,7 @@ header a {
 #footer .footerCc .footer-container {
   background-color: #f0f0f3 !important;
   display: grid;
-  grid-template-columns: 1fr 1.4fr 0.6fr 0.6fr;
+  grid-template-columns: 1fr 1.4fr 0.9fr 0.2fr;
   grid-template-areas: "kontakt about info";
   gap: 40px;
 }

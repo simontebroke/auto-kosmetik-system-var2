@@ -226,73 +226,48 @@ function App() {
               <div className="kontakt">
                 <h5>Kontakt</h5>
                 <div className="mobisdo tb">
-                  <p className="black">
-                    Montag Ruhetag
-                    <br />
-                    Dienstag bis Donnerstag
-                  </p>
+                  <p className="black">Öffnungszeiten</p>
                   <p className="text">
-                    17:30 bis 22:30 Uhr
+                    Mo-Fr 8:00 bis 18:00 Uhr
                     <br />
-                    (mittags geschlossen)
+                    Sa 9:00 bis 15:00 Uhr
+                    <br />
+                    Sonntag Geschlossen
                   </p>
                 </div>
 
-                <div className="frbisso tb">
-                  <p className="black">Freitag bis Sonntag</p>
-                  <p className="text">
-                    12:00 bis 14:30 Uhr
-                    <br />
-                    17:30 bis 22:30 Uhr
-                  </p>
-                </div>
                 <div className="contactinfo">
-                  <p className="black">
-                    Al Prosecco
-                    <br />
-                    Casinowall 5, 46399 Bocholt
-                  </p>
+                  <p className="black">Autokosmetik-System Durmaz</p>
                   <p className="linkblue">
-                    <a href="tel:+4915773245623">mobil. 01577 3245623</a>
+                    <a>Im Königsesch 13A, 46395 Bocholt</a>
                     <br />
-                    <a href="tel:+4928712368270">tel. 02871 23 68 270</a>
+                    <a href="tel:+4928711877963">tel. 02871 18 77 963</a>
                     <br />
-                    <a href="mailto:info@alprosecco.de">info@alprosecco.de</a>
+                    <a href="mailto:info@alprosecco.de">im-durmaz@hotmail.de</a>
                     <br />
                     <a href="https://www.alprosecco.de" target="_blank">
-                      www.alprosecco.de
+                      www.autopflege-bocholt.de
                     </a>
                   </p>
                 </div>
               </div>
               <div className="about">
-                <h5>Über Auto Kosmetik System.</h5>
+                <h5>Über Autokosmetik-System Durmaz</h5>
                 <div className="local tb">
-                  <p className="black blacktwo">Unser Lokal</p>
+                  <p className="black blacktwo">Das sind wir</p>
                   <p className="text">
-                    Die Gasträume teilen sich in drei Bereiche auf für eine
-                    ausgewogene Atmosphäre innerhalb des Restaurants. Im Haus
-                    verfügen wir über 100 À-la-Carte-Plätze. Auf der
-                    angeschlossenen Veranda mit seitlichem Blick auf die
-                    Bocholter Innenstadt finden sich unter einer
-                    Sonnensegelüberdachung weitere 50 Plätze.
-                  </p>
-                </div>
-                <div className="occasions">
-                  <p className="black blacktwo">Besondere Anlässe</p>
-                  <p className="text">
-                    Hierfür können wir unsere Aufnahmekapazität für Sie
-                    individuell erweitern. Gerne richten wir auch Feiern und
-                    Veranstaltungen, wie Geburtstage oder Hochzeiten aus mit
-                    einer Vielzahl an Menüvorschlägen nach Ihren Wünschen und
-                    gestalten unser Restaurant in eine erstklassige
-                    Party-Location.
+                    Mit Leidenschaft und Präzision bringen wir jedes Fahrzeug
+                    wieder zum Strahlen. Lernen Sie uns kennen und erfahren Sie,
+                    wie wir durch unsere Liebe zum Detail beeindruckende
+                    Ergebnisse erzielen – für ein Fahrzeug, das wie neu wirkt.
                   </p>
                 </div>
               </div>
               <div className="information">
                 <h5 className="ih">Informationen</h5>
-                <p className="text ihtext">Impressum • Datenschutz</p>
+                <p className="text ihtext">
+                  Impressum • Datenschutz • Cookies & Nutzung
+                </p>
                 <svg
                   width="18"
                   height="19"
