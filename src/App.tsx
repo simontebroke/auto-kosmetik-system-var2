@@ -1,8 +1,21 @@
 import "./App.css";
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 
 function App() {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 727);
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const scrollRight = () => {
     if (scrollContainerRef.current) {
@@ -20,7 +33,7 @@ function App() {
       <header>
         <div className="navlist">
           Lust auf neuen Glanz? Rufen Sie an und lassen Sie uns gemeinsam Ihr
-          Fahrzeug perfektionieren!*
+          Fahrzeug perfektionieren!* {""}
           <span>
             <a href="">
               Jetzt anrufen
@@ -60,12 +73,17 @@ function App() {
                   <br />
                   Durmaz
                 </h6>
+                <h3>
+                  Professionelle <br />
+                  Instandsetzung <br />
+                  und Aufbereitung
+                </h3>
 
                 <h4>Autopflege & Aufbereitung</h4>
                 <div className="buttons-container">
                   <button className="btn1 reserve">
                     <a href="mailto:info@alprosecco.de?subject=Termin%20buchen">
-                      <p>Termin vereinbaren</p>
+                      <p>Termin buchen</p>
                     </a>
                   </button>
                   <button
@@ -80,15 +98,24 @@ function App() {
               </div>
               <div className="scocon">
                 <div className="pp-container">
-                  <p className="pp">
-                    <span>Wellness für dein Fahrzeug.</span> Unser erfahrenes
-                    Team steht Ihnen für jede unserer Dienstleistungen als
-                    zuverlässiger Partner zur Seite und behandelt Ihr Fahrzeug,
-                    als wäre es unser eigenes. Für beste Ergebnisse setzen wir
-                    ausschließlich hochwertige Materialien und Werkzeuge ein,
-                    die den höchsten Marktstandards entsprechen. Unser
-                    Full-Service-Ansatz bietet Ihnen maximale Qualität.
-                  </p>
+                  {isMobile ? (
+                    <p className="pp">
+                      Wellness für dein Fahrzeug. Unser erfahrenes Team steht
+                      Ihnen für jede unserer Dienstleistungen als zuverlässiger
+                      Partner zur Seite und behande...
+                    </p>
+                  ) : (
+                    <p className="pp">
+                      <span>Wellness für dein Fahrzeug.</span> Unser erfahrenes
+                      Team steht Ihnen für jede unserer Dienstleistungen als
+                      zuverlässiger Partner zur Seite und behandelt Ihr
+                      Fahrzeug, als wäre es unser eigenes. Für beste Ergebnisse
+                      setzen wir ausschließlich hochwertige Materialien und
+                      Werkzeuge ein, die den höchsten Marktstandards
+                      entsprechen. Unser Full-Service-Ansatz bietet Ihnen
+                      maximale Qualität.
+                    </p>
+                  )}
                 </div>
                 <h5 className="categories">
                   Besichtigung · Begutachtung · Fahrzeugübergabe · Aufbereitung
@@ -281,7 +308,8 @@ function App() {
                     d="M13.2655 6.21991C13.0708 6.21991 12.8805 6.16218 12.7186 6.05401C12.5567 5.94585 12.4306 5.79211 12.3561 5.61224C12.2816 5.43237 12.2621 5.23444 12.3 5.04349C12.338 4.85254 12.4318 4.67714 12.5695 4.53948C12.7071 4.40181 12.8825 4.30806 13.0735 4.27007C13.2644 4.23209 13.4623 4.25159 13.6422 4.32609C13.8221 4.4006 13.9758 4.52677 14.084 4.68865C14.1922 4.85053 14.2499 5.04084 14.2499 5.23553C14.2502 5.36488 14.2249 5.49301 14.1755 5.61257C14.1261 5.73212 14.0537 5.84075 13.9622 5.93221C13.8707 6.02368 13.7621 6.09617 13.6425 6.14555C13.523 6.19492 13.3949 6.22019 13.2655 6.21991ZM9 6.87593C9.5192 6.87593 10.0267 7.02989 10.4584 7.31834C10.8901 7.60679 11.2266 8.01678 11.4253 8.49645C11.624 8.97613 11.676 9.50395 11.5747 10.0132C11.4734 10.5224 11.2234 10.9902 10.8562 11.3573C10.4891 11.7244 10.0214 11.9744 9.51214 12.0757C9.00291 12.177 8.47509 12.125 7.99541 11.9263C7.51574 11.7276 7.10575 11.3912 6.8173 10.9595C6.52885 10.5278 6.37488 10.0202 6.37488 9.50104C6.37563 8.80505 6.65244 8.13777 7.14459 7.64563C7.63673 7.15348 8.30401 6.87667 9 6.87593ZM9 5.56354C8.22124 5.56354 7.45996 5.79447 6.81244 6.22713C6.16493 6.65979 5.66025 7.27474 5.36223 7.99423C5.06421 8.71371 4.98623 9.50541 5.13816 10.2692C5.29009 11.033 5.6651 11.7346 6.21577 12.2853C6.76644 12.8359 7.46803 13.211 8.23183 13.3629C8.99563 13.5148 9.78733 13.4368 10.5068 13.1388C11.2263 12.8408 11.8413 12.3361 12.2739 11.6886C12.7066 11.0411 12.9375 10.2798 12.9375 9.50104C12.9375 8.45675 12.5227 7.45523 11.7842 6.71681C11.0458 5.97839 10.0443 5.56354 9 5.56354Z"
                     fill="black"
                   />
-                </svg>
+                </svg>{" "}
+                {""}
                 <svg
                   width="18"
                   height="18"
