@@ -186,15 +186,19 @@ header a {
   color: #222222;
 }
 
-#aboutSection {
-  margin: 32px 0 0 14%;
+.aboutSectionTitle {
+  margin-left: 14%;
+  color: #252525;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 21.48px;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-top: 32px;
 }
-#aboutSection hr {
-  border: none; /* Remove default border */
-  height: 0.5px; /* Set the height of the line */
-  background-color: #d2d2d7; /* Set the background color */
-  margin: 18px 0; /* Optional: Adjust margins as needed */
-  margin: 18px 14% 0 0;
+
+#aboutSection {
+  margin: 0px 11.15% 0;
 }
 #aboutSection h5 {
   color: #252525;
@@ -204,30 +208,45 @@ header a {
   text-align: left;
   margin-bottom: 10px;
 }
-#aboutSection .buttonContainer {
+#aboutSection .aboutScrollSection {
+  position: relative;
+  width: 100%;
+}
+#aboutSection .aboutScrollSection button {
+  border: none;
+  cursor: pointer;
+}
+#aboutSection .aboutScrollSection .boxContainer {
   display: flex;
   flex-direction: row;
   gap: 20px;
   flex-shrink: 0;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  margin: 0 30px;
 }
-#aboutSection .buttonContainer .aboutButton {
-  width: 304px;
+#aboutSection .aboutScrollSection .boxContainer::-webkit-scrollbar {
+  display: none;
+}
+#aboutSection .aboutScrollSection .boxContainer .aboutBox {
+  min-width: 304px;
+  max-width: 304px;
   height: 145px;
   background-color: #fff;
   padding: 16px 18px;
   border-radius: 15px;
 }
-#aboutSection .buttonContainer .aboutButton h5 {
+#aboutSection .aboutScrollSection .boxContainer .aboutBox h5 {
   margin-bottom: 5px;
 }
-#aboutSection .buttonContainer .aboutButton h6 {
+#aboutSection .aboutScrollSection .boxContainer .aboutBox h6 {
   color: #7f7f7f;
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.01em;
   text-align: left;
 }
-#aboutSection .buttonContainer .aboutButton p {
+#aboutSection .aboutScrollSection .boxContainer .aboutBox p {
   padding: 0 0 0 3px;
   color: #7f7f7f;
   font-size: 13px;
@@ -262,28 +281,35 @@ header a {
 }
 
 #footer {
-  margin: 56px 0;
   background-color: #f0f0f3 !important;
 }
-#footer .footer-container {
+#footer .footerCc {
+  margin: 0 14%;
+}
+#footer .footerCc hr {
+  border: none;
+  height: 0.5px;
+  background-color: #d2d2d7;
+  margin: 25px 0;
+}
+#footer .footerCc .footer-container {
   background-color: #f0f0f3 !important;
   display: grid;
   grid-template-columns: 1fr 1.4fr 0.6fr 0.6fr;
   grid-template-areas: "kontakt about info";
-  margin: 0 14%;
   gap: 40px;
 }
-#footer .footer-container a {
+#footer .footerCc .footer-container a {
   color: #0071e3;
   font-weight: 400;
   line-height: 16px;
   text-align: left;
   text-decoration: none;
 }
-#footer .footer-container p {
+#footer .footerCc .footer-container p {
   font-size: 0.8rem;
 }
-#footer .footer-container h5 {
+#footer .footerCc .footer-container h5 {
   color: #252525;
   font-size: 1rem;
   font-weight: 700;
@@ -291,35 +317,35 @@ header a {
   text-align: left;
   margin-bottom: 10px;
 }
-#footer .footer-container .ih {
+#footer .footerCc .footer-container .ih {
   margin-bottom: 29px;
 }
-#footer .footer-container .ihtext {
+#footer .footerCc .footer-container .ihtext {
   margin-bottom: 11.5px;
 }
-#footer .footer-container .black {
+#footer .footerCc .footer-container .black {
   color: #252525;
   font-weight: 500;
   line-height: 16px;
   text-align: left;
   margin-bottom: 2px;
 }
-#footer .footer-container .blacktwo {
+#footer .footerCc .footer-container .blacktwo {
   margin-bottom: 5px;
 }
-#footer .footer-container .text {
+#footer .footerCc .footer-container .text {
   font-weight: 400;
   line-height: 16px;
   text-align: left;
   color: #7b7b7c;
 }
-#footer .footer-container .linkblue {
+#footer .footerCc .footer-container .linkblue {
   color: #0071e3;
   font-weight: 400;
   line-height: 16px;
   text-align: left;
 }
-#footer .footer-container .tb {
+#footer .footerCc .footer-container .tb {
   margin-bottom: 20px;
 }
 
@@ -449,5 +475,21 @@ header a {
 @media (max-width: 1412px) {
   #home .content .content-grid .scocon .pp-container .pp {
     bottom: 12px;
+  }
+}
+@media (min-width: 1790px) {
+  #aboutSection {
+    margin: 0px 14% 0 !important;
+  }
+}
+@media (min-width: 1736px) {
+  #aboutSection .aboutScrollSection button {
+    display: none;
+  }
+  #aboutSection {
+    margin: 0px 13% 0;
+  }
+  #aboutSection .aboutScrollSection .boxContainer {
+    margin: 0px;
   }
 }/*# sourceMappingURL=App.css.map */

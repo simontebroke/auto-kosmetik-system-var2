@@ -194,16 +194,19 @@ header {
   }
 }
 
-#aboutSection {
-  margin: 32px 0 0 14%;
+.aboutSectionTitle {
+  margin-left: 14%;
+  color: #252525;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 21.48px;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-top: 32px;
+}
 
-  hr {
-    border: none; /* Remove default border */
-    height: 0.5px; /* Set the height of the line */
-    background-color: #d2d2d7; /* Set the background color */
-    margin: 18px 0; /* Optional: Adjust margins as needed */
-    margin: 18px 14% 0 0;
-  }
+#aboutSection {
+  margin: 0px 11.15% 0;
 
   h5 {
     color: #252525;
@@ -213,35 +216,51 @@ header {
     text-align: left;
     margin-bottom: 10px;
   }
-  .buttonContainer {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    flex-shrink: 0;
-    .aboutButton {
-      width: 304px;
-      height: 145px;
-      background-color: #fff;
-      padding: 16px 18px;
-      border-radius: 15px;
-      h5 {
-        margin-bottom: 5px;
+  .aboutScrollSection {
+    position: relative;
+    width: 100%;
+    button {
+      border: none;
+      cursor: pointer;
+    }
+
+    .boxContainer {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      flex-shrink: 0;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      margin: 0 30px;
+      &::-webkit-scrollbar {
+        display: none;
       }
-      h6 {
-        color: #7f7f7f;
-        font-size: 12px;
-        font-weight: 600;
-        letter-spacing: 0.01em;
-        text-align: left;
-      }
-      p {
-        padding: 0 0 0 3px;
-        color: #7f7f7f;
-        font-size: 13px;
-        font-weight: 300;
-        letter-spacing: 0.01em;
-        text-align: left;
-        margin-top: 9px;
+      .aboutBox {
+        min-width: 304px;
+        max-width: 304px;
+        height: 145px;
+        background-color: #fff;
+        padding: 16px 18px;
+        border-radius: 15px;
+        h5 {
+          margin-bottom: 5px;
+        }
+        h6 {
+          color: #7f7f7f;
+          font-size: 12px;
+          font-weight: 600;
+          letter-spacing: 0.01em;
+          text-align: left;
+        }
+        p {
+          padding: 0 0 0 3px;
+          color: #7f7f7f;
+          font-size: 13px;
+          font-weight: 300;
+          letter-spacing: 0.01em;
+          text-align: left;
+          margin-top: 9px;
+        }
       }
     }
   }
@@ -272,63 +291,70 @@ header {
 }
 
 #footer {
-  margin: 56px 0;
   background-color: #f0f0f3 !important;
-  .footer-container {
-    background-color: #f0f0f3 !important;
-    display: grid;
-    grid-template-columns: 1fr 1.4fr 0.6fr 0.6fr;
-    grid-template-areas: "kontakt about info";
+  .footerCc {
     margin: 0 14%;
-    gap: 40px;
-    a {
-      color: #0071e3;
-      font-weight: 400;
-      line-height: 16px;
-      text-align: left;
-      text-decoration: none;
+    hr {
+      border: none;
+      height: 0.5px;
+      background-color: #d2d2d7;
+      margin: 25px 0;
     }
-    p {
-      font-size: 0.8rem;
-    }
-    h5 {
-      color: #252525;
-      font-size: 1rem;
-      font-weight: 700;
-      line-height: 21.48px;
-      text-align: left;
-      margin-bottom: 10px;
-    }
-    .ih {
-      margin-bottom: 29px;
-    }
-    .ihtext {
-      margin-bottom: 11.5px;
-    }
-    .black {
-      color: #252525;
-      font-weight: 500;
-      line-height: 16px;
-      text-align: left;
-      margin-bottom: 2px;
-    }
-    .blacktwo {
-      margin-bottom: 5px;
-    }
-    .text {
-      font-weight: 400;
-      line-height: 16px;
-      text-align: left;
-      color: #7b7b7c;
-    }
-    .linkblue {
-      color: #0071e3;
-      font-weight: 400;
-      line-height: 16px;
-      text-align: left;
-    }
-    .tb {
-      margin-bottom: 20px;
+    .footer-container {
+      background-color: #f0f0f3 !important;
+      display: grid;
+      grid-template-columns: 1fr 1.4fr 0.6fr 0.6fr;
+      grid-template-areas: "kontakt about info";
+      gap: 40px;
+      a {
+        color: #0071e3;
+        font-weight: 400;
+        line-height: 16px;
+        text-align: left;
+        text-decoration: none;
+      }
+      p {
+        font-size: 0.8rem;
+      }
+      h5 {
+        color: #252525;
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 21.48px;
+        text-align: left;
+        margin-bottom: 10px;
+      }
+      .ih {
+        margin-bottom: 29px;
+      }
+      .ihtext {
+        margin-bottom: 11.5px;
+      }
+      .black {
+        color: #252525;
+        font-weight: 500;
+        line-height: 16px;
+        text-align: left;
+        margin-bottom: 2px;
+      }
+      .blacktwo {
+        margin-bottom: 5px;
+      }
+      .text {
+        font-weight: 400;
+        line-height: 16px;
+        text-align: left;
+        color: #7b7b7c;
+      }
+      .linkblue {
+        color: #0071e3;
+        font-weight: 400;
+        line-height: 16px;
+        text-align: left;
+      }
+      .tb {
+        margin-bottom: 20px;
+      }
     }
   }
 }
@@ -489,5 +515,23 @@ header {
 @media (max-width: 1412px) {
   #home .content .content-grid .scocon .pp-container .pp {
     bottom: 12px;
+  }
+}
+
+@media (min-width: 1790px) {
+  #aboutSection {
+    margin: 0px 14% 0 !important;
+  }
+}
+
+@media (min-width: 1736px) {
+  #aboutSection .aboutScrollSection button {
+    display: none;
+  }
+  #aboutSection {
+    margin: 0px 13% 0;
+  }
+  #aboutSection .aboutScrollSection .boxContainer {
+    margin: 0px;
   }
 }
